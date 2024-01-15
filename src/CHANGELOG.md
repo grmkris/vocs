@@ -1,5 +1,11 @@
 # vocs
 
+## 1.0.0-alpha.14
+
+### Patch Changes
+
+- [`f7540e4`](https://github.com/wevm/vocs/commit/f7540e4a33b634e7d52c851117dd7533aeaca1b4) Thanks [@jxom](https://github.com/jxom)! - Fixed twoslash rendering.
+
 ## 1.0.0-alpha.13
 
 ### Patch Changes
