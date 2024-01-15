@@ -1,8 +1,10 @@
-import { createTwoSlasher } from 'twoslash'
+// TODO: switch back to `twoslash`
+// import { createTwoSlasher } from 'twoslash'
+import { twoslasher as twoslasher_ } from '@typescript/twoslash'
 import * as cache from '../../utils/cache.js'
 import { hash } from '../../utils/hash.js'
 
-const twoslasher_ = createTwoSlasher()
+// const twoslasher = createTwoSlasher()
 
 export function twoslasher(
   ...parameters: Parameters<typeof twoslasher_>
@@ -19,6 +21,7 @@ export function twoslasher(
     const line = lines.length - 1
     return {
       code: parameters[0],
+      // @ts-expect-error
       nodes: [
         {
           filename: '',
@@ -33,7 +36,6 @@ export function twoslasher(
           id: '',
         },
       ],
-      // @ts-expect-error
       meta: {},
       queries: [],
       completions: [],

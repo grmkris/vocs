@@ -84,6 +84,8 @@ export const getRehypePlugins = ({ markdown, twoslash = {} }: RehypePluginsParam
           transformerTwoSlash({
             explicitTrigger: true,
             renderer: twoslashRenderer(),
+            // TODO: switch back to `twoslash`
+            // @ts-expect-error
             twoslasher,
             twoslashOptions: {
               ...twoslash,
